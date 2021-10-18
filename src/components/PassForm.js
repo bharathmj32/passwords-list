@@ -17,8 +17,8 @@ function PassForm(props) {
    <form onSubmit={handleSubmit} className='pass-form'>
       <div className='form'>
       <input placeholder='Name of site' value={input.value} onChange={(e)=>setInput({ id: input.id, value: e.target.value, uname : input.uname , pass: input.pass})} name='text' className='pass-input' />
-      <input placeholder='Enter Username' value={input.uname} onChange={(e)=>setInput({ id: input.id, value: input.value, uname : e.target.uname , pass: input.pass})} name='text' className='pass-input'/>
-      <input placeholder='Enter Password' value={input.pass} onChange={(e)=>setInput({ id: input.id, value: input.value, uname : input.uname , pass: e.target.pass})} name='text' className='pass-input' />
+      <input placeholder='Enter Username' value={input.uname} onChange={(e)=>setInput({ id: input.id, value: input.value, uname : e.target.value , pass: input.pass})} name='text' className='pass-input'/>
+      <input placeholder='Enter Password' value={input.pass} onChange={(e)=>setInput({ id: input.id, value: input.value, uname : input.uname , pass: e.target.value})} name='text' className='pass-input' />
       <button onClick={handleSubmit} className='pass-button'>Submit</button>
     </div>
     </form>
