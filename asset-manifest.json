@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/passwords-list/static/css/main.f9845a32.chunk.css",
+    "main.js": "/passwords-list/static/js/main.1a38b27b.chunk.js",
+    "main.js.map": "/passwords-list/static/js/main.1a38b27b.chunk.js.map",
+    "runtime-main.js": "/passwords-list/static/js/runtime-main.25270b47.js",
+    "runtime-main.js.map": "/passwords-list/static/js/runtime-main.25270b47.js.map",
+    "static/js/2.70142c0a.chunk.js": "/passwords-list/static/js/2.70142c0a.chunk.js",
+    "static/js/2.70142c0a.chunk.js.map": "/passwords-list/static/js/2.70142c0a.chunk.js.map",
+    "index.html": "/passwords-list/index.html",
+    "static/css/main.f9845a32.chunk.css.map": "/passwords-list/static/css/main.f9845a32.chunk.css.map",
+    "static/js/2.70142c0a.chunk.js.LICENSE.txt": "/passwords-list/static/js/2.70142c0a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.25270b47.js",
+    "static/js/2.70142c0a.chunk.js",
+    "static/css/main.f9845a32.chunk.css",
+    "static/js/main.1a38b27b.chunk.js"
+  ]
+}
