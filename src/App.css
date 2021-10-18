@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+}
+.cover{
+    width:90%;
+    background-color: antiquewhite;
+    margin:15px auto;
+    counter-reset:i;
+}
+#title{
+    color: chocolate;
+    font:700 30px cursive;
+
+}
+.scroll-div{
+    width:50%;
+    margin: 15px;
+    height: 300px;
+    overflow-y: auto;
+}
+.scroll-div::-webkit-scrollbar{
+    width:5px;
+}
+.scroll-div::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+.scroll-div::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: linear-gradient(orange,red);
+}
+.one-row{
+    background-color:brown;
+    color: azure;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+strong{
+    
+}
+strong::before {counter-increment:i;content:counter(i);}
+
+.icons-div{
+    display: inline;
+    margin-left: 100px;
+}
+.drop-text{
+    color:azure;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+
+
+
+.pass-form {
+  margin-bottom: 32px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pass-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #e0114f;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color:#e0114f;
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pass-input::placeholder {
+  color: #f0ce0d;
 }
 
-.App-link {
-  color: #61dafb;
+.pass-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgb(171, 238, 14) 0%,
+    rgb(243, 68, 150) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pass-input.edit {
+  border: 2px solid #149fff;
+}
+
+.pass-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  padding: 16px 22px;
 }
