@@ -1,17 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.cover{
-    width:90%;
-    background-color: antiquewhite;
-    margin:15px auto;
-    counter-reset:i;
-}
-#title{
-    color: chocolate;
-    font:700 30px cursive;
-
+body{
+  counter-reset:i;
+  background-color:darkblue;
 }
 .scroll-div{
     width:50%;
@@ -43,64 +32,4 @@ strong{
 }
 strong::before {counter-increment:i;content:counter(i);}
 
-.icons-div{
-    display: inline;
-    margin-left: 100px;
-}
-.drop-text{
-    color:azure;
-}
 
-
-
-
-
-
-
-
-.pass-form {
-  margin-bottom: 32px;
-}
-
-.pass-input {
-  padding: 14px 32px 14px 16px;
-  border-radius: 4px 0 0 4px;
-  border: 2px solid #e0114f;
-  outline: none;
-  width: 320px;
-  background: transparent;
-  color:#e0114f;
-  display: block;
-}
-
-.pass-input::placeholder {
-  color: #f0ce0d;
-}
-
-.pass-button {
-  padding: 16px;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  outline: none;
-  background: linear-gradient(
-    90deg,
-    rgb(171, 238, 14) 0%,
-    rgb(243, 68, 150) 100%
-  );
-  color: #fff;
-  text-transform: capitalize;
-}
-
-.pass-input.edit {
-  border: 2px solid #149fff;
-}
-
-.pass-button.edit {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
-  padding: 16px 22px;
-}

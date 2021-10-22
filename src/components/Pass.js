@@ -11,7 +11,8 @@ const Pass = ({ passes, removePass, updatePass }) => {
   const submitUpdate = e => {
           e.preventDefault();
           updatePass({id:edit.id, text:edit.value, uname:edit.unam, pass:edit.pas});
-          setEdit({id: null, value: '' ,unam:'' ,pas:''});   
+          setEdit({id: null, value: '' ,unam:'' ,pas:''});  
+           
   };
  
   
@@ -22,16 +23,17 @@ const Pass = ({ passes, removePass, updatePass }) => {
       <input placeholder='Enter Password' value={edit.pas} onChange={(e)=>setEdit({ id: edit.id, value: edit.value, unam : edit.unam , pas: e.target.value})} name='text' className='pass-input'  />
       <button onClick={submitUpdate} className='pass-button'>Update</button>
     </div>
+
     </>
   }
 
  
   return (
     <div className='scroll-div' >
-    {  
-    passes.map((pass) => (
+    {passes.map((pass) => (
      <div className='one-row'>
         <strong>. {pass.text}</strong>  
+
       <div className='icons-div'>
           <RiCloseCircleLine onClick={() => removePass(pass.id)} className='delete-icon' />
           <TiEdit onClick={() => setEdit({ id: pass.id, value: pass.text, unam : pass.uname , pas: pass.pass})}  className='edit-icon'  />
@@ -39,7 +41,7 @@ const Pass = ({ passes, removePass, updatePass }) => {
                 <>
                   <IoIosArrowDropup onClick={()=>settoggle({id:pass.id,tog:false})} className='drop-icon'/>  
                   <div className='drop-text'>                  
-                    UserName: {pass.uname}   
+                          UserName: {pass.uname}   
                     <br/> Password: {pass.pass}
                   </div>
                 </>    
